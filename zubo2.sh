@@ -81,11 +81,8 @@ program=template/template_${city}.txt
 sed "s/ipipip/$ip1/g" $program > tmp_1.txt
 sed "s/ipipip/$ip2/g" $program > tmp_2.txt
 sed "s/ipipip/$ip3/g" $program > tmp_3.txt
-echo "${city}-组播1,#genre#" > tmp_all.txt
 cat tmp_1.txt >> tmp_all.txt
-echo "${city}-组播2,#genre#" >> tmp_all.txt
 cat tmp_2.txt >> tmp_all.txt
-echo "${city}-组播3,#genre#" >> tmp_all.txt
 cat tmp_3.txt >> tmp_all.txt
 grep -vE '/{3}' tmp_all.txt > "txt/${city}.txt"
 rm -f tmp_1.txt tmp_2.txt tmp_3.txt tmp_all.txt
