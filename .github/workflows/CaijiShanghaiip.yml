@@ -1,4 +1,4 @@
-name: zubo
+name: CaijiShanghaiip
 
 on:
   schedule:
@@ -24,27 +24,27 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: 获取组播源
+      - name: 获取源
         run: |
           cd $GITHUB_WORKSPACE
-          python ./zubo.py
+          python ./CaijiShanghaiip.py
           
       - name: Install Dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y yt-dlp sed nmap
         
-      - name: 测试组播源
+      - name: 测试源
         run: |
           cd $GITHUB_WORKSPACE
-          cat zubo.txt > zubo_备份.txt
-          bash ./zubo2.sh
-          cat txt/上海电信.txt > zubo.txt
+          cat zubo.txt > zubo_bf.txt
+          bash ./CaijiShanghaiip.sh
+          cat txt/Shanghai_dianxin.txt > zubo.txt
           
-      - name: 更新组播源
+      - name: 更新源
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "更新组播源"
+          git commit -m "更新源"
           git push
