@@ -77,20 +77,35 @@ ip2=$(awk 'NR==2{print $2}' $result_ip)
 ip3=$(awk 'NR==3{print $2}' $result_ip)
 ip4=$(awk 'NR==4{print $2}' $result_ip)
 ip5=$(awk 'NR==5{print $2}' $result_ip)
+ip6=$(awk 'NR==6{print $2}' $result_ip)
+ip7=$(awk 'NR==7{print $2}' $result_ip)
+ip8=$(awk 'NR==8{print $2}' $result_ip)
+ip9=$(awk 'NR==9{print $2}' $result_ip)
+ip10=$(awk 'NR==10{print $2}' $result_ip)
 rm -f speedtest_${city}_$time.log $result_ip    
-# 用 5 个最快 ip 生成对应城市的 txt 文件
+# 用 10 个最快 ip 生成对应城市的 txt 文件
 program=template/template_${city}.txt
 sed "s/ipipip/$ip1/g" $program > tmp_1.txt
 sed "s/ipipip/$ip2/g" $program > tmp_2.txt
 sed "s/ipipip/$ip3/g" $program > tmp_3.txt
 sed "s/ipipip/$ip4/g" $program > tmp_4.txt
 sed "s/ipipip/$ip5/g" $program > tmp_5.txt
+sed "s/ipipip/$ip6/g" $program > tmp_6.txt
+sed "s/ipipip/$ip7/g" $program > tmp_7.txt
+sed "s/ipipip/$ip8/g" $program > tmp_8.txt
+sed "s/ipipip/$ip9/g" $program > tmp_9.txt
+sed "s/ipipip/$ip10/g" $program > tmp_10.txt
 cat tmp_1.txt >> tmp_all.txt
 cat tmp_2.txt >> tmp_all.txt
 cat tmp_3.txt >> tmp_all.txt
 cat tmp_4.txt >> tmp_all.txt
 cat tmp_5.txt >> tmp_all.txt
+cat tmp_6.txt >> tmp_all.txt
+cat tmp_7.txt >> tmp_all.txt
+cat tmp_8.txt >> tmp_all.txt
+cat tmp_9.txt >> tmp_all.txt
+cat tmp_10.txt >> tmp_all.txt
 grep -vE '/{3}' tmp_all.txt > "txt/${city}.txt"
-rm -f tmp_1.txt tmp_2.txt tmp_3.txt tmp_4.txt tmp_5.txt tmp_all.txt
+rm -f tmp_1.txt tmp_2.txt tmp_3.txt tmp_4.txt tmp_5.txt tmp_6.txt tmp_7.txt tmp_8.txt tmp_9.txt tmp_10.txt tmp_all.txt
 echo "${city} 测试完成，生成可用文件：'txt/${city}.txt'"
 #--------合并所有城市的txt文件---------
