@@ -82,8 +82,28 @@ ip7=$(awk 'NR==7{print $2}' $result_ip)
 ip8=$(awk 'NR==8{print $2}' $result_ip)
 ip9=$(awk 'NR==9{print $2}' $result_ip)
 ip10=$(awk 'NR==10{print $2}' $result_ip)
+ip11=$(awk 'NR==11{print $2}' $result_ip)
+ip12=$(awk 'NR==12{print $2}' $result_ip)
+ip13=$(awk 'NR==13{print $2}' $result_ip)
+ip14=$(awk 'NR==14{print $2}' $result_ip)
+ip15=$(awk 'NR==15{print $2}' $result_ip)
+ip16=$(awk 'NR==16{print $2}' $result_ip)
+ip17=$(awk 'NR==17{print $2}' $result_ip)
+ip18=$(awk 'NR==18{print $2}' $result_ip)
+ip19=$(awk 'NR==19{print $2}' $result_ip)
+ip20=$(awk 'NR==20{print $2}' $result_ip)
+ip21=$(awk 'NR==21{print $2}' $result_ip)
+ip22=$(awk 'NR==22{print $2}' $result_ip)
+ip23=$(awk 'NR==23{print $2}' $result_ip)
+ip24=$(awk 'NR==24{print $2}' $result_ip)
+ip25=$(awk 'NR==25{print $2}' $result_ip)
+ip26=$(awk 'NR==26{print $2}' $result_ip)
+ip27=$(awk 'NR==27{print $2}' $result_ip)
+ip28=$(awk 'NR==28{print $2}' $result_ip)
+ip29=$(awk 'NR==29{print $2}' $result_ip)
+ip30=$(awk 'NR==30{print $2}' $result_ip)
 rm -f speedtest_${city}_$time.log $result_ip    
-# 用 10 个最快 ip 生成对应城市的 txt 文件
+# 用 30 个最快 ip 生成对应城市的 txt 文件
 program=template/template_${city}.txt
 sed "s/ipipip/$ip1/g" $program > tmp_1.txt
 sed "s/ipipip/$ip2/g" $program > tmp_2.txt
@@ -95,6 +115,26 @@ sed "s/ipipip/$ip7/g" $program > tmp_7.txt
 sed "s/ipipip/$ip8/g" $program > tmp_8.txt
 sed "s/ipipip/$ip9/g" $program > tmp_9.txt
 sed "s/ipipip/$ip10/g" $program > tmp_10.txt
+sed "s/ipipip/$ip11/g" $program > tmp_11.txt
+sed "s/ipipip/$ip12/g" $program > tmp_12.txt
+sed "s/ipipip/$ip13/g" $program > tmp_13.txt
+sed "s/ipipip/$ip14/g" $program > tmp_14.txt
+sed "s/ipipip/$ip15/g" $program > tmp_15.txt
+sed "s/ipipip/$ip16/g" $program > tmp_16.txt
+sed "s/ipipip/$ip17/g" $program > tmp_17.txt
+sed "s/ipipip/$ip18/g" $program > tmp_18.txt
+sed "s/ipipip/$ip19/g" $program > tmp_19.txt
+sed "s/ipipip/$ip20/g" $program > tmp_20.txt
+sed "s/ipipip/$ip21/g" $program > tmp_21.txt
+sed "s/ipipip/$ip22/g" $program > tmp_22.txt
+sed "s/ipipip/$ip23/g" $program > tmp_23.txt
+sed "s/ipipip/$ip24/g" $program > tmp_24.txt
+sed "s/ipipip/$ip25/g" $program > tmp_25.txt
+sed "s/ipipip/$ip26/g" $program > tmp_26.txt
+sed "s/ipipip/$ip27/g" $program > tmp_27.txt
+sed "s/ipipip/$ip28/g" $program > tmp_28.txt
+sed "s/ipipip/$ip29/g" $program > tmp_29.txt
+sed "s/ipipip/$ip30/g" $program > tmp_30.txt
 cat tmp_1.txt >> tmp_all.txt
 cat tmp_2.txt >> tmp_all.txt
 cat tmp_3.txt >> tmp_all.txt
@@ -105,7 +145,27 @@ cat tmp_7.txt >> tmp_all.txt
 cat tmp_8.txt >> tmp_all.txt
 cat tmp_9.txt >> tmp_all.txt
 cat tmp_10.txt >> tmp_all.txt
+cat tmp_11.txt >> tmp_all.txt
+cat tmp_12.txt >> tmp_all.txt
+cat tmp_13.txt >> tmp_all.txt
+cat tmp_14.txt >> tmp_all.txt
+cat tmp_15.txt >> tmp_all.txt
+cat tmp_16.txt >> tmp_all.txt
+cat tmp_17.txt >> tmp_all.txt
+cat tmp_18.txt >> tmp_all.txt
+cat tmp_19.txt >> tmp_all.txt
+cat tmp_20.txt >> tmp_all.txt
+cat tmp_21.txt >> tmp_all.txt
+cat tmp_22.txt >> tmp_all.txt
+cat tmp_23.txt >> tmp_all.txt
+cat tmp_24.txt >> tmp_all.txt
+cat tmp_25.txt >> tmp_all.txt
+cat tmp_26.txt >> tmp_all.txt
+cat tmp_27.txt >> tmp_all.txt
+cat tmp_28.txt >> tmp_all.txt
+cat tmp_29.txt >> tmp_all.txt
+cat tmp_30.txt >> tmp_all.txt
 grep -vE '/{3}' tmp_all.txt > "txt/${city}.txt"
-rm -f tmp_1.txt tmp_2.txt tmp_3.txt tmp_4.txt tmp_5.txt tmp_6.txt tmp_7.txt tmp_8.txt tmp_9.txt tmp_10.txt tmp_all.txt
+rm -f tmp_1.txt tmp_2.txt tmp_3.txt tmp_4.txt tmp_5.txt tmp_6.txt tmp_7.txt tmp_8.txt tmp_9.txt tmp_10.txt tmp_11.txt tmp_12.txt tmp_13.txt tmp_14.txt tmp_15.txt tmp_16.txt tmp_17.txt tmp_18.txt tmp_19.txt tmp_20.txt tmp_21.txt tmp_22.txt tmp_23.txt tmp_24.txt tmp_25.txt tmp_26.txt tmp_27.txt tmp_28.txt tmp_29.txt tmp_30.txt tmp_all.txt
 echo "${city} 测试完成，生成可用文件：'txt/${city}.txt'"
 #--------合并所有城市的txt文件---------
