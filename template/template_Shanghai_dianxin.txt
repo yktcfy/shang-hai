@@ -82,7 +82,7 @@ http://ipipip/rtp/239.45.1.55:5140
 http://ipipip/rtp/239.45.0.13:5140
 #EXTINF:-1 tvg-id="都市剧场" tvg-name="都市剧场" tvg-logo="https://live.fanmingming.com/tv/都市剧场.png" group-title="卫视高清",都市剧场
 http://ipipip/rtp/239.45.3.136:5140
-#EXTINF:-1 tvg-id="欢笑剧场" tvg-name="欢笑剧场" tvg-logo="https://www.yangfeiyue.cn/tv/欢笑剧场.png" group-title="数字频道",欢笑剧场
+#EXTINF:-1 tvg-id="欢笑剧场" tvg-name="欢笑剧场" tvg-logo="https://live.fanmingming.com/tv/欢笑剧场.png" group-title="数字频道",欢笑剧场
 http://ipipip/rtp/239.45.1.4:5140
 #EXTINF:-1 tvg-id="BesTV电影4K" tvg-name="BesTV电影4K" tvg-logo="https://live.fanmingming.com/tv/BesTV电影4K.png" group-title="卫视高清",BesTV电影4K
 http://ipipip/rtp/239.45.1.42:5140
@@ -94,7 +94,7 @@ http://ipipip/rtp/239.45.0.37:5140
 http://ipipip/rtp/239.45.0.15:5140
 #EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://live.fanmingming.com/tv/海南卫视.png" group-title="央视频道",海南卫视
 http://ipipip/rtp/239.45.1.81:5140
-#EXTINF:-1 tvg-id="1" tvg-name="三沙卫视" tvg-logo="https://www.yangfeiyue.cn/tv/三沙卫视.png" group-title="卫视高清",三沙卫视
+#EXTINF:-1 tvg-id="1" tvg-name="三沙卫视" tvg-logo="https://live.fanmingming.com/tv/三沙卫视.png" group-title="卫视高清",三沙卫视
 http://ipipip/rtp/239.45.0.56:5140
-#EXTINF:-1 tvg-id="1" tvg-name="广西卫视" tvg-logo="https://www.yangfeiyue.cn/tv/广西卫视.png" group-title="卫视高清",广西卫视
+#EXTINF:-1 tvg-id="1" tvg-name="广西卫视" tvg-logo="https://live.fanmingming.com/tv/广西卫视.png" group-title="卫视高清",广西卫视
 http://ipipip/rtp/239.45.0.5:5140
