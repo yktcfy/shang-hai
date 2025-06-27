@@ -60,6 +60,8 @@ http://ipipip/rtp/239.45.0.53:5140
 http://ipipip/rtp/239.45.0.44:5140
 #EXTINF:-1 tvg-id="电视指南" tvg-name="电视指南" tvg-logo="https://live.fanmingming.com/tv/电视指南.png" group-title="央视高清",电视指南
 http://ipipip/rtp/239.45.1.73:5140
+#EXTINF:-1 tvg-id="1" tvg-name="早期教育" tvg-logo="https://live.fanmingming.com/tv/早期教育.png" group-title="卫视高清",早期教育
+http://ipipip/rtp/239.45.0.54:5140
 #EXTINF:-1 tvg-name="CHC家庭影院" tvg-logo="https://live.fanmingming.com/tv/CHC家庭影院.png" group-title="卫视高清",CHC家庭影院
 http://ipipip/rtp/239.45.0.40:5140
 #EXTINF:-1 tvg-name="CHC高清电影" tvg-logo="https://live.fanmingming.com/tv/CHC高清电影.png" group-title="卫视高清",CHC高清电影
